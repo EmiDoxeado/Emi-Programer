@@ -1,0 +1,8 @@
+$path = Read-Host "Escribe la ruta de la carpeta"
+if (Test-Path $path) {
+    Get-ChildItem -Path $path | ForEach-Object {
+        Write-Host $_.Name
+    }
+} else {
+    Write-Host "La ruta especificada no existe." -ForegroundColor Red
+}
