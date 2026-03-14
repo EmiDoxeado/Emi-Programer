@@ -1,0 +1,15 @@
+function Get-Square {
+    param (
+        [Parameter(Mandatory)]
+        [double]$Number
+    )
+    return [math]::Pow($Number, 2)
+}
+
+function Get-Cube {
+    param (
+        [Parameter(Mandatory)]
+        [double]$Number
+    )
+    return [math]::Pow($Number, 3)
+}
